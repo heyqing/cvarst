@@ -1,0 +1,131 @@
+{
+  "pages": [{
+      "path": "pages/home/home",
+      "style": {
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150
+      }
+    },
+    {
+      "path": "pages/process/process",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/person/person",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "permission ": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+    }
+  },
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [{
+        "path": "article_detail/article_detail",
+        "style": {
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "search/search",
+        "style": {
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "person_data/person_data",
+        "style": {
+          "navigationBarTitleText": "我的数据",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "person_like/person_like",
+        "style": {
+          "navigationBarTitleText": "我的喜欢",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "logout/logout",
+        "style": {
+          "navigationBarTitleText": "退出登录",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "about_us/about_us",
+        "style": {
+          "navigationBarTitleText": "关于我们",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "article_list/article_list",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "photo_detail/photo_detail",
+        "style": {
+          "navigationBarTitleText": "数据解析",
+          "enablePullDownRefresh": false
+        }
+      }
+    ]
+  }],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "C V A R S T",
+    "navigationBarBackgroundColor": "#1781B5",
+    "backgroundColor": "#1781B5",
+    "app-plus": {
+      "background": "#efeff4"
+    },
+    "usingComponents": {
+      //这里为方便，全局引入了所有组件，也可以在某个page下单独引用某个组件
+      "van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+      "van-button": "/wxcomponents/vant/button/index",
+      "van-cell": "/wxcomponents/vant/cell/index",
+      "van-cell-group": "/wxcomponents/vant/cell-group/index",
+      "van-dialog": "/wxcomponents/vant/dialog/index",
+      "van-icon": "/wxcomponents/vant/icon/index",
+      "van-notify": "/wxcomponents/vant/notify/index",
+      "van-panel": "/wxcomponents/vant/panel/index",
+      "van-swipe-cell": "/wxcomponents/vant/swipe-cell/index",
+      "van-toast": "/wxcomponents/vant/toast/index",
+      "van-popup": "/wxcomponents/vant/popup/index"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#C00",
+    "backgroundColor": "#1781B5",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/white/a-001_shouye.png",
+        "selectedIconPath": "static/red/a-001_shouye.png"
+      },
+      {
+        "pagePath": "pages/process/process",
+        "text": "图像",
+        "iconPath": "static/white/a-001_xiangji.png",
+        "selectedIconPath": "static/red/a-001_xiangji.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人",
+        "iconPath": "static/white/a-001_wode.png",
+        "selectedIconPath": "static/red/a-001_wode.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--MyBatis配置文件-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.heyqing.cvarst_back.dao.mapper.ArticleBodyMapper">
+
+
+<!--    ArticleBody findBodyById(Long bodyId);-->
+    <select id="findBodyById" resultType="com.heyqing.cvarst_back.dao.pojo.ArticleBody">
+        select contentHTML,content from wx_article_body
+
+        <where>
+            1 = 1
+        <if test="bodyId != null">
+            and id = #{bodyId}
+        </if>
+        </where>
+
+    </select>
+</mapper>

@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@escook/request-miniprogram": "^0.2.1",
+    "@vant/weapp": "^1.11.1",
+    "async-validator": "^1.11.5",
+    "echarts": "^5.4.3",
+    "element-ui": "^2.15.14"
+  },
+  "name": "cvarst_front",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "babel-plugin-component": "^1.1.1"
+  }
+}
